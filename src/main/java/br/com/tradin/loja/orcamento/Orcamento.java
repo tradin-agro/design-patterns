@@ -1,6 +1,7 @@
 package br.com.tradin.loja.orcamento;
 
 import br.com.tradin.loja.orcamento.situacao.EmAnalise;
+import br.com.tradin.loja.orcamento.situacao.Finalizado;
 import br.com.tradin.loja.orcamento.situacao.SituacaoOrcamento;
 
 import java.math.BigDecimal;
@@ -46,5 +47,9 @@ public class Orcamento {
 
     public void setSituacaoOrcamento(SituacaoOrcamento situacaoOrcamento) {
         this.situacaoOrcamento = situacaoOrcamento;
+    }
+
+    public boolean isFinalizado() {
+        return situacaoOrcamento instanceof Finalizado;
     }
 }

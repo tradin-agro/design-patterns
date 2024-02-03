@@ -1,6 +1,7 @@
 package br.com.tradin;
 
 import br.com.tradin.loja.http.JavaHttpClient;
+import br.com.tradin.loja.orcamento.ItemOrcamento;
 import br.com.tradin.loja.orcamento.Orcamento;
 import br.com.tradin.loja.orcamento.RegistroDeOrcamento;
 
@@ -8,7 +9,8 @@ import java.math.BigDecimal;
 
 public class TestesAdapter {
     public static void main(String[] args) {
-        Orcamento orcamento = new Orcamento(BigDecimal.TEN, 1);
+        Orcamento orcamento = new Orcamento();
+        orcamento.adicionarItem(new ItemOrcamento(new BigDecimal("10")));
         orcamento.aprovar();
         orcamento.finalizar();
 

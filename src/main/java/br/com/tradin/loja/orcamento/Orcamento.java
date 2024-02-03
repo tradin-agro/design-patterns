@@ -40,6 +40,11 @@ public class Orcamento implements Orcavel {
     }
 
     public BigDecimal getValor() {
+        try {
+            Thread.sleep(2000); // para testar Pattern Proxy
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return this.valor;
     }
 

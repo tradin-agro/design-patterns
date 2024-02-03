@@ -1,8 +1,8 @@
 package br.com.tradin;
 
-import br.com.tradin.loja.impostos.CalculadorDeImpostos;
-import br.com.tradin.loja.impostos.ICMS;
-import br.com.tradin.loja.impostos.ISS;
+import br.com.tradin.loja.impostos.strategy.CalculadorDeImpostos;
+import br.com.tradin.loja.impostos.strategy.ICMS;
+import br.com.tradin.loja.impostos.strategy.ISS;
 import br.com.tradin.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;

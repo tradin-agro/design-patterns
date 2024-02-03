@@ -1,5 +1,6 @@
-package br.com.tradin.loja.impostos;
+package br.com.tradin.loja.impostos.strategy;
 
+import br.com.tradin.loja.impostos.strategy.Imposto;
 import br.com.tradin.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;
